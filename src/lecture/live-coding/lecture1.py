@@ -56,7 +56,6 @@ for token in tokens:
         if is_capitalized(token):
             cap_names_list.append(token)
 
-
 # TODO Do the same as below for the remaining lists
 primes_list = list(set(primes_list.sort()))
 primes_list.sort()
