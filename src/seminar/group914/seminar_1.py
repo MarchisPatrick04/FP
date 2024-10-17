@@ -24,41 +24,13 @@ Problem statements to choose from:
 1. Given 2 ints, a and b, return True if one of them is 10 or if their sum is 10
 Question – What happens if we enter a non-integer number, or alphanumeric characters?
 """
-def is_sum_10(a: int, b: int) -> bool:
-    if a==10 or b==10 or a+b==10:
-        return "True"
-    else:
-        return "False"
-# "a : int" means that the type of parameter should be int
+
 """
 2. Write a Python program which iterates the integers from 1 to 50. 
 For multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". 
 For numbers which are multiples of both three and five print "FizzBuzz".
 """
-# v1 - without function
-for i in range(1, 51):
-    if i % 3 == 0 and i % 5 == 0:
-        print("FizzBuzz")
-    elif i%3==0:
-        print("Fizz")
-    elif i%5==0:
-        print("Buzz")
-    else:
-        print(i)
 
-# v2 - with function
-def fizz_buzz(left : int, right : int) -> list:
-    result = [] # empty list in python
-    for i in range(left, right+1):
-        if i % 3 == 0 and i % 5 == 0:
-            result.append("FizzBuzz")
-        elif i % 3 == 0:
-            result.append("Fizz")
-        elif i % 5 == 0:
-            result.append("Buzz")
-        else:
-            result.append(i)
-    return result
 """
 3. Calculate the first n terms of the Fibonacci sequence
 """
